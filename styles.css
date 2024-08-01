@@ -5,52 +5,150 @@ CSS RESET
 /*
   1. Use a more-intuitive box-sizing model.
 */
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
-  /*
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
     2. Remove default margin
   */
-  * {
-    margin: 0;
-  }
-  /*
+* {
+  margin: 0;
+}
+/*
     Typographic tweaks!
     3. Add accessible line-height
     4. Improve text rendering
   */
-  body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-  }
-  /*
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
     5. Improve media defaults
   */
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
-  /*
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
     6. Remove built-in form typography styles
   */
-  input, button, textarea, select {
-    font: inherit;
-  }
-  /*
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
     7. Avoid text overflows
   */
-  p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-  }
-  /*
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
     8. Create a root stacking context
   */
-  #root, #__next {
-    isolation: isolate;
-  }
+#root,
+#__next {
+  isolation: isolate;
+}
 
-  /*
+/*
   PROJECT SPECIFIC CSS
   */
 
-  
+.header {
+  background-color: #1f2937;
+  color: white;
+  padding: 40px 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 90px;
+}
+
+.logo {
+  margin-right: auto;
+  font-size: 24px;
+  color: #f9faf8;
+}
+
+.menu-item,
+.header-body-section p {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.header-body {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 5%;
+}
+
+.header-body-section img {
+  height: 300px;
+  min-width: 550px;
+  border-radius: 10px;
+}
+
+.header-body-section h3 {
+  font-size: 48px;
+  font-weight: bolder;
+  color: #f9faf8;
+}
+
+.sign-up {
+  color: #f9faf8;
+  background-color: #3882f6;
+  font-weight: bold;
+  padding: 5px 25px;
+  margin: 10px 0;
+  border: #3882f6;
+  border-radius: 10px;
+}
+
+/*FIRST SECTION OF WEBSITE*/
+.section-1 {
+  padding: 40px 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0%;
+}
+
+.image-row {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.image-holder {
+    padding: 30px;
+}
+
+.image-holder img {
+    min-height: 300px;
+    min-width: 200px;
+    border: 2px solid #3882f6;
+    border-radius: 10px;
+}
+
+
